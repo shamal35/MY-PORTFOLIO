@@ -102,7 +102,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="hidden lg:flex justify-center items-center relative"
+            className="flex justify-center items-center relative order-first lg:order-last"
           >
             {/* Decorative frame */}
             <div className="relative">
@@ -110,7 +110,7 @@ const Hero = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/50 via-purple-500/30 to-accent/50 rounded-2xl blur-xl opacity-60"></div>
               
               {/* Main image container */}
-              <div className="relative w-80 h-96 sm:w-96 sm:h-[450px] rounded-2xl overflow-hidden border border-primary/30">
+              <div className="relative w-48 h-56 sm:w-64 sm:h-80 md:w-80 md:h-96 lg:w-96 lg:h-[450px] rounded-2xl overflow-hidden border border-primary/30">
                 {/* Profile image */}
                 <img 
                   src={profileImg} 
@@ -130,12 +130,12 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator - hidden on mobile */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2"
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}
