@@ -11,7 +11,7 @@ export const certifications = [
     id: 2,
     title: "Introduction to Linux (LFS101)",
     issuer: "The Linux Foundation",
-    date: "Issued Oct 2024",
+    date: "Issued 2025",
     description: "Comprehensive Linux fundamentals certification covering command line operations, system administration, and Linux security essentials.",
     icon: "🐧"
   },
@@ -19,7 +19,7 @@ export const certifications = [
     id: 3,
     title: "Introduction to Cybersecurity",
     issuer: "Cisco",
-    date: "2024",
+    date: "2025",
     description: "Foundation certification in cybersecurity concepts, threat landscape, and security best practices from Cisco Networking Academy.",
     icon: "🛡️"
   },
@@ -27,7 +27,7 @@ export const certifications = [
     id: 4,
     title: "Linux Command Line Proficiency",
     issuer: "The Linux Foundation",
-    date: "2024",
+    date: "2025",
     description: "Advanced Linux command line skills including shell scripting, system management, and security configurations.",
     icon: "💻"
   },
@@ -35,7 +35,7 @@ export const certifications = [
     id: 5,
     title: "Careers in Cyber",
     issuer: "Cybersecurity Training",
-    date: "2024",
+    date: "2025",
     description: "Professional development certification exploring cybersecurity career paths, industry requirements, and specialized security domains.",
     icon: "🔐"
   },
