@@ -2,6 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import profileImg from '../assets/profile.png';
 
+// Custom CV download link (Google Drive, Dropbox, etc.)
+const CV_URL = "https://google.com";
+
 const Hero = () => {
   return (
     <section
@@ -93,6 +96,19 @@ const Hero = () => {
                 className="px-8 py-3 border border-gray-600 hover:border-primary rounded-full font-semibold text-white transition-all duration-300"
               >
                 Learn More
+              </motion.a>
+              <motion.a
+                href={CV_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 bg-gradient-to-r from-purple-600 to-primary hover:from-purple-700 hover:to-primary-dark rounded-full font-semibold text-white shadow-lg shadow-purple-500/30 transition-all duration-300 flex items-center gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download CV
               </motion.a>
             </motion.div>
           </div>
