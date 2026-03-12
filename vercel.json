@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/form",
+      "destination": "https://forms.gle/JLHMWAfkPkTc9qx17",
+      "permanent": false
+    },
+    {
+      "source": "/survey",
+      "destination": "https://forms.gle/JLHMWAfkPkTc9qx17",
+      "permanent": false
+    }
+  ]
+}
