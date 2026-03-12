@@ -3,12 +3,18 @@
     {
       "source": "/form",
       "destination": "https://forms.gle/JLHMWAfkPkTc9qx17",
-      "permanent": false
+      "statusCode": 302
     },
     {
       "source": "/survey",
       "destination": "https://forms.gle/JLHMWAfkPkTc9qx17",
-      "permanent": false
+      "statusCode": 302
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
