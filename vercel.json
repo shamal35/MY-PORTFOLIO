@@ -1,17 +1,13 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/form",
-      "destination": "https://forms.gle/JLHMWAfkPkTc9qx17",
-      "statusCode": 302
+      "destination": "/form.html"
     },
     {
       "source": "/survey",
-      "destination": "https://forms.gle/JLHMWAfkPkTc9qx17",
-      "statusCode": 302
-    }
-  ],
-  "rewrites": [
+      "destination": "/form.html"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
