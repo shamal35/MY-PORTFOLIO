@@ -1,16 +1,19 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/form",
-      "destination": "/form.html"
+      "src": "/form",
+      "dest": "/form.html"
     },
     {
-      "source": "/survey",
-      "destination": "/form.html"
+      "src": "/survey",
+      "dest": "/form.html"
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "handle": "filesystem"
+    },
+    {
+      "src": "/((?!_vercel).*)",
+      "dest": "/index.html"
     }
   ]
 }
