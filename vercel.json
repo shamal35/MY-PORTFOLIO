@@ -1,6 +1,14 @@
 {
   "routes": [
     {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    },
+    {
       "src": "/form",
       "dest": "/form.html"
     },
@@ -12,7 +20,7 @@
       "handle": "filesystem"
     },
     {
-      "src": "/((?!_vercel).*)",
+      "src": "/((?!_vercel|sitemap\\.xml|robots\\.txt).*)",
       "dest": "/index.html"
     }
   ]
