@@ -68,7 +68,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Section title */}
         <motion.div
@@ -76,18 +76,18 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-10 sm:mb-12"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold gradient-text mb-4">
+          <h2 className="text-3xl sm:text-5xl font-bold gradient-text mb-3 sm:mb-4">
             Get In Touch
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-400 text-sm sm:text-base mt-4 max-w-2xl mx-auto px-2 sm:px-0">
             Have a question or want to work together? Feel free to reach out!
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -96,7 +96,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-bold text-white mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
               Contact Information
             </h3>
 
@@ -111,14 +111,14 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ x: 5 }}
-                className="glass glass-hover rounded-xl p-6 flex items-center gap-4 group cursor-pointer"
+                className="glass glass-hover rounded-xl p-4 sm:p-6 flex items-start sm:items-center gap-4 group cursor-pointer"
               >
-                <div className="text-accent group-hover:scale-110 transition-transform duration-200">
+                <div className="text-accent group-hover:scale-110 transition-transform duration-200 shrink-0 mt-1 sm:mt-0">
                   {info.icon}
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-gray-400 text-sm">{info.label}</p>
-                  <p className="text-white font-medium group-hover:text-accent transition-colors duration-200">
+                  <p className="text-white text-sm sm:text-base font-medium group-hover:text-accent transition-colors duration-200 break-all sm:break-normal">
                     {info.value}
                   </p>
                 </div>
@@ -131,7 +131,7 @@ const Contact = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
-              className="glass rounded-xl p-6 mt-8"
+              className="glass rounded-xl p-4 sm:p-6 mt-6 sm:mt-8"
             >
               <p className="text-gray-300 text-sm leading-relaxed">
                 I'm currently open to <span className="text-accent font-semibold">internship opportunities</span> and{' '}
@@ -146,16 +146,16 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="glass rounded-xl p-8"
+            className="glass rounded-xl p-5 sm:p-8"
           >
-            <h3 className="text-2xl font-bold text-white mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-5 sm:mb-6">
               Send a Message
             </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
               {/* Name input */}
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="name" className="block text-xs sm:text-sm font-medium text-gray-300 mb-2">
                   Your Name
                 </label>
                 <input
@@ -165,14 +165,14 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors duration-200"
+                  className="w-full px-4 py-2.5 sm:py-3 bg-slate-800 border border-slate-700 rounded-lg text-white text-sm sm:text-base placeholder-gray-500 focus:outline-none focus:border-primary transition-colors duration-200"
                   placeholder="John Doe"
                 />
               </div>
 
               {/* Email input */}
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="email" className="block text-xs sm:text-sm font-medium text-gray-300 mb-2">
                   Email Address
                 </label>
                 <input
@@ -182,14 +182,14 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors duration-200"
+                  className="w-full px-4 py-2.5 sm:py-3 bg-slate-800 border border-slate-700 rounded-lg text-white text-sm sm:text-base placeholder-gray-500 focus:outline-none focus:border-primary transition-colors duration-200"
                   placeholder="john@example.com"
                 />
               </div>
 
               {/* Message input */}
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-xs sm:text-sm font-medium text-gray-300 mb-2">
                   Message
                 </label>
                 <textarea
@@ -198,8 +198,8 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows="5"
-                  className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors duration-200 resize-none"
+                  rows="4"
+                  className="w-full px-4 py-2.5 sm:py-3 min-h-[130px] sm:min-h-[160px] bg-slate-800 border border-slate-700 rounded-lg text-white text-sm sm:text-base placeholder-gray-500 focus:outline-none focus:border-primary transition-colors duration-200 resize-none"
                   placeholder="Your message here..."
                 ></textarea>
               </div>
@@ -209,7 +209,7 @@ const Contact = () => {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full px-6 py-3 bg-gradient-to-r from-primary to-accent rounded-lg font-semibold text-white shadow-lg glow-hover transition-all duration-300"
+                className="w-full px-6 py-2.5 sm:py-3 bg-gradient-to-r from-primary to-accent rounded-lg text-sm sm:text-base font-semibold text-white shadow-lg glow-hover transition-all duration-300"
               >
                 Send Message
               </motion.button>
