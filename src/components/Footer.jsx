@@ -195,7 +195,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-2 text-gray-500 text-sm">
             <span>Built with</span>
-            <span className="text-red-500">❤</span>
+            <span className="text-red-500">NineWave Solutions</span>
             <span>using</span>
             <span className="text-primary">React</span>
             <span>&</span>
