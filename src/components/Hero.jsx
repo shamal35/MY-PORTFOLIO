@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import profileImg from '../assets/profile.png';
 
 // Custom CV download link (Google Drive, Dropbox, etc.)
-const CV_URL = "https://google.com";
+const CV_URL = "https://drive.google.com/file/d/1OHZmiot-20VzmbEV-T85XYFtQKNe-XsQ/view?usp=sharing";
 
 const Hero = () => {
   return (
